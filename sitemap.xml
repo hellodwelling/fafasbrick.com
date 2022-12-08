@@ -2,3 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>https://fafasbrick.com/index</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/store</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/reviews</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/gallery-All</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/gallery-Exterior-Renovations</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/service-Paver-installation</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/service-Paver-repair---sealing</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/service-Driveways-</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/service-Walkways-</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/service-Steps</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/service-Pool-Remodels</loc>
+        <lastmod>2022-12-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+</urlset>
