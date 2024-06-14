@@ -1020,7 +1020,7 @@ Once you've invested in a beautiful brick paver landscape, it's important to pro
             aria-modal="true"
             x-id="['modal-title']"
             :aria-labelledby="$id('modal-title')"
-            class="fixed inset-0 z-50 overflow-y-scroll"
+            class="fixed inset-0 z-50 overflow-y-scroll md:pt-8"
             x-trap.noscroll.inert="contactModalOpen"
             id="send-text-modal"
             data-heap-component-name="send-text-modal"
@@ -1047,7 +1047,7 @@ Once you've invested in a beautiful brick paver landscape, it's important to pro
                 x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 onclick="handleClose('blog-36731')"
                 @click="contactModalOpen = false"
-                class="relative flex items-center justify-center w-full h-full"
+                class="relative flex items-center justify-center overflow-auto md:pt-4"
         >
             <div
                     @click.stop
