@@ -18,13 +18,13 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Paver Company in Lakeland, FL | Fafa&#x27;s Omega Brick Pavers</title>
+    <title>Exterior Renovations | Gallery</title>
 
     
         <link rel="canonical" href="https://fafasbrick.com/gallery-Exterior-Renovations" />
     
 
-    <meta name="description" content="Fafa&#x27;s Omega Brick Pavers is a family-owned and operated business that has been providing quality paver services to the Lakeland, FL area for many years." />
+    <meta name="description" content="A collection of exterior renovations photos to showcase our best work as a Paver Company company. See what Fafa&#x27;s Omega Brick Pavers can do for you!" />
     
     
     <link rel="icon" href="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/267x267/filters:strip_exif()/filters:no_upscale()/filters:format(webp)/media/4f8a757a-c21a-4465-bf61-98e94f3d39b3.png" type="image/x-icon">
@@ -160,7 +160,7 @@
 </head>
 
 <body
-    
+    class="xl:pt-44 pt-24 ease-in-out"
     x-data="{ 
         contactModalOpen: false,
         applyModalOpen: false,
@@ -175,7 +175,7 @@
         customNavTransparent:  true ,
         showMessage: false,
         navbarHeight: '',
-        calculateTopMargin: false,
+        calculateTopMargin: true,
     }"
     x-effect="if (contactChatOpen === true) setTimeout(() => showMessage = true, 300)"
     :style="{ paddingTop: navbarHeight }"
@@ -262,7 +262,7 @@
                 
                 <div
                     class="flex flex-row items-center xl:hidden"
-                    :class="{ 'text-white': true }"
+                    :class="{ 'text-gray-700': !scrolledFromTop, 'text-white': scrolledFromTop }"
                 >
                     <span class="uppercase">Menu</span>
                     <button @click="mobileOpen = !mobileOpen" class="p-2" aria-label="mobile menu button">
@@ -290,8 +290,8 @@
                                 
                                     <a
                                         href=" ./ "
-                                        class=" border-secondary hover:border-gray-300    hover:border-gray-100 hover:text-gray-100  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 uppercase"
-                                        :class="{ 'text-white': true }"
+                                        class=" border-transparent   hover:border-gray-100 hover:text-gray-100  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 uppercase"
+                                        :class="{ 'hover:border-gray-300 hover:text-gray-700 text-gray-900': !scrolledFromTop, 'hover:border-gray-100 hover:text-gray-100 text-white': scrolledFromTop }"
                                     >
                                         Home
                                     </a>
@@ -315,7 +315,7 @@
                                         aria-controls="navitem_2"
                                         @click="desktopOpen = !desktopOpen"
                                         class="inline-flex items-center px-1 pt-6 pb-5 text-sm font-medium transition border-transparent focus:ring-0 focus:ring-offset-0 focus:outline-none group uppercase"
-                                        :class="{  'text-white hover:text-gray-100': true  }"
+                                        :class="{ 'hover:text-gray-700 text-gray-900': !scrolledFromTop, 'text-white hover:text-gray-100': scrolledFromTop }"
                                     >
                                         <span 
                                             class="block py-5 "
@@ -432,10 +432,10 @@
                                         aria-controls="navitem_3"
                                         @click="desktopOpen = !desktopOpen"
                                         class="inline-flex items-center px-1 pt-6 pb-5 text-sm font-medium transition border-transparent focus:ring-0 focus:ring-offset-0 focus:outline-none group uppercase"
-                                        :class="{  'text-white hover:text-gray-100': true  }"
+                                        :class="{ 'hover:text-gray-700 text-gray-900': !scrolledFromTop, 'text-white hover:text-gray-100': scrolledFromTop }"
                                     >
                                         <span 
-                                            class="block py-5 "
+                                            class="block py-5 border-b-2 border-secondary hover:border-gray-300"
                                         >Galleries</span>
                                         <svg
                                             class="w-5 h-5 ml-2 transition-transform duration-300"
@@ -491,6 +491,15 @@
                                                     </a>
                                                 
                                                     <a
+                                                        href=" gallery-instagram "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-0 focus:ring-offset-0 hover:bg-gray-50"
+                                                    >
+                                                        <p class="mt-1 text-base font-medium uppercase">instagram</p>
+<!--                                                        <p class="mt-1 text-sm text-gray-500 line-clamp-2"></p>-->
+                                                    </a>
+                                                
+                                                    <a
                                                         href=" gallery-All "
                                                         role="menuitem"
                                                         class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-0 focus:ring-offset-0 hover:bg-gray-50"
@@ -518,7 +527,7 @@
                                     <a
                                         href=" showcases "
                                         class=" border-transparent   hover:border-gray-100 hover:text-gray-100  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 uppercase"
-                                        :class="{ 'text-white': true }"
+                                        :class="{ 'hover:border-gray-300 hover:text-gray-700 text-gray-900': !scrolledFromTop, 'hover:border-gray-100 hover:text-gray-100 text-white': scrolledFromTop }"
                                     >
                                         Showcases
                                     </a>
@@ -538,7 +547,7 @@
                                     <a
                                         href=" reviews "
                                         class=" border-transparent   hover:border-gray-100 hover:text-gray-100  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 uppercase"
-                                        :class="{ 'text-white': true }"
+                                        :class="{ 'hover:border-gray-300 hover:text-gray-700 text-gray-900': !scrolledFromTop, 'hover:border-gray-100 hover:text-gray-100 text-white': scrolledFromTop }"
                                     >
                                         Reviews
                                     </a>
@@ -558,7 +567,7 @@
                                     <a
                                         href=" blog "
                                         class=" border-transparent   hover:border-gray-100 hover:text-gray-100  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 uppercase"
-                                        :class="{ 'text-white': true }"
+                                        :class="{ 'hover:border-gray-300 hover:text-gray-700 text-gray-900': !scrolledFromTop, 'hover:border-gray-100 hover:text-gray-100 text-white': scrolledFromTop }"
                                     >
                                         Blog
                                     </a>
@@ -777,6 +786,10 @@
                                                 
                                                     <a href="gallery-Exterior-Renovations" role="menuitem" class="block p-3 -m-3 transition rounded-md">
                                                         <p class="mt-1 text-sm text-gray-500 uppercase">Exterior Renovations</p>
+                                                    </a>
+                                                
+                                                    <a href="gallery-instagram" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                        <p class="mt-1 text-sm text-gray-500 uppercase">instagram</p>
                                                     </a>
                                                 
                                                     <a href="gallery-All" role="menuitem" class="block p-3 -m-3 transition rounded-md">
@@ -2292,6 +2305,8 @@ function filterGalleryByDataId(filter) {
 </script>
                     
                 
+                    
+                
             
         </div>
         
@@ -2749,6 +2764,8 @@ function filterGalleryByDataId(filter) {
 </template>
 
                                     
+                                
+                            
                                 
                             
                         
