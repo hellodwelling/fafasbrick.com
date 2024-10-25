@@ -556,6 +556,26 @@
 
                             </div>
                         
+                            <div
+                                class="relative flex items-center"
+                                x-trap.inert="desktopOpen"
+                                x-data="{ desktopOpen: false }"
+                                @keydown.escape.stop="desktopOpen = false"
+                                @click.away="desktopOpen = false"
+                            >
+                                
+                                    <a
+                                        href=" blog "
+                                        class=" border-secondary hover:border-gray-300    hover:border-gray-100 hover:text-gray-100  group pb-5 pt-6 inline-flex items-center px-1 transition text-sm font-medium  focus:outline-none focus:ring-0 focus:ring-offset-0 uppercase"
+                                        :class="{ 'hover:border-gray-300 hover:text-gray-700 text-gray-900': !scrolledFromTop, 'hover:border-gray-100 hover:text-gray-100 text-white': scrolledFromTop }"
+                                    >
+                                        Blog
+                                    </a>
+                                
+                                
+
+                            </div>
+                        
                         
 
                     </div>
@@ -798,6 +818,17 @@
                                             href=" reviews "
                                             class="text-gray-500 block px-3 py-2 text-base font-medium rounded-md border-secondary transition uppercase"
                                             >Reviews</a
+                                        >
+                                    
+                                    
+                                </div>
+                            
+                                <div x-trap.inert="openMenu == 'navitem_7'">
+                                    
+                                        <a
+                                            href=" blog "
+                                            class="text-gray-500 block px-3 py-2 text-base font-medium rounded-md border-secondary transition uppercase"
+                                            >Blog</a
                                         >
                                     
                                     
@@ -1054,6 +1085,482 @@
 
                 
                 
+                    
+                        <section>
+    <div
+            class="flex justify-center m-auto w-full bg-primary bg-opacity-10"
+            data-heap-component-name="blog-post"
+            data-heap-version="v2"
+    >
+        <div class="flex flex-col text-center justify-center items-center mx-8 my-16 sm:mx-auto sm:py-16 sm:w-4/5">
+            <div class="space-y-5 flex flex-col items-center">
+                <h1 class="flex flex-col items-center space-y-4 pb-8 sm:max-w-3xl">
+                    <span class="block text-base font-semibold tracking-wide text-center uppercase text-secondary">Blog</span>
+                    <span class="text-3xl font-extrabold text-center text-primary sm:text-4xl sm:w-3/4">Sustainable Paving Solutions: Eco-Friendly Designs by Fafa&#x27;s Omega Brick Pavers</span>
+                    <span class="block text-lg text-center text-gray-500">Aug 01, 2024</span>
+                </h1>
+                <div class="flex flex-col space-y-8 text-gray-500 text-lg text-left sm:max-w-3xl leading-8 blog-headers blog-list">
+                    Are you looking to enhance the beauty of your outdoor living space while also being environmentally conscious? Look no further than Fafa's Omega Brick Pavers for all your sustainable paving needs! Our eco-friendly designs not only add aesthetic appeal to your property but also help reduce your carbon footprint. Let's dive into the world of sustainable paving solutions and discover the benefits of choosing Fafa's Omega Brick Pavers for your next project.<p>At Fafa's Omega Brick Pavers, we believe in creating beautiful outdoor spaces that are in harmony with the environment. That's why we offer a wide range of eco-friendly paving solutions that are not only durable and aesthetically pleasing but also sustainable. From permeable brick pavers to recycled materials, we have options to suit every style and budget.<p>One of the key eco-friendly paving solutions we offer at Fafa's Omega Brick Pavers is permeable pavers. Unlike traditional pavement, permeable pavers allow water to flow through the surface and infiltrate into the ground below. This helps reduce stormwater runoff, minimize erosion, and replenish groundwater supplies. By choosing permeable pavers for your driveway, patio, or walkway, you can help protect the environment and prevent water pollution.<p>In addition to permeable pavers, we also offer paving solutions made from recycled materials. These sustainable pavers are created using reclaimed stone, brick, and concrete, reducing the need for new raw materials and diverting waste from landfills. Not only are recycled pavers environmentally friendly, but they also add a unique and rustic charm to any outdoor space. By choosing recycled pavers from Fafa's Omega Brick Pavers, you can transform your property into a sustainable oasis.<p>When you choose Fafa's Omega Brick Pavers for your paving project, you can rest assured that you are making a responsible choice for the planet. Our commitment to sustainability extends beyond our products to our installation practices. We utilize efficient techniques that minimize waste and maximize energy efficiency. By working with our team of expert installers, you can achieve a beautiful, eco-friendly outdoor space that will stand the test of time.<p>Whether you are looking to enhance the curb appeal of your home or create a welcoming outdoor environment for your business, Fafa's Omega Brick Pavers has the sustainable paving solutions you need. Our team of dedicated professionals will work with you every step of the way to bring your vision to life while reducing your environmental impact. Let's create a greener, more sustainable future together with Fafa's Omega Brick Pavers!<p>In conclusion, if you are in search of eco-friendly and sustainable paving solutions, look no further than Fafa's Omega Brick Pavers. Our commitment to environmental responsibility, coupled with our high-quality products and expert craftsmanship, make us the premier choice for all your paving needs. Transform your outdoor space today with Fafa's Omega Brick Pavers and take a step towards a greener tomorrow!
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                        
+                            <template x-teleport="body">
+    <div
+            x-show="contactModalOpen"
+            @keydown.escape.prevent.stop="contactModalOpen = false"
+            role="dialog"
+            aria-modal="true"
+            x-id="['modal-title']"
+            :aria-labelledby="$id('modal-title')"
+            class="fixed inset-0 z-50 md:pt-8"
+            x-trap.noscroll.inert="contactModalOpen"
+            id="send-text-modal"
+            data-heap-component-name="send-text-modal"
+	        data-heap-version="v2"
+    >
+        <div
+                x-show="contactModalOpen"
+                x-transition:enter="ease-out duration-300"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="ease-in duration-200"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                aria-hidden="true"
+                class="fixed inset-0 bg-black bg-opacity-50"
+        ></div>
+        <div
+                x-show="contactModalOpen"
+                x-transition:enter="ease-out duration-300"
+                x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                x-transition:leave="ease-in duration-200"
+                x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                onclick="handleClose('blog-60009')"
+                @click="contactModalOpen = false"
+                class="relative flex h-full items-center justify-center overflow-auto md:pt-4"
+        >
+            <div
+                    @click.stop
+                    class="flex flex-col w-full sm:h-auto h-full text-left transition-all transform bg-white rounded-lg shadow-xl sm:px-0 sm:my-0 sm:align-middle sm:max-w-3xl sm:max-h-90vh overflow-auto "
+            >
+
+                <div class="relative px-6 pb-1">
+                    <h2 class="mt-6 text-lg font-medium text-center" :id="$id('modal-title')">Send us a text</h2>
+                    <button
+                            onclick="handleClose('blog-60009')"
+                            @click="contactModalOpen = false;"
+                            class="absolute p-1 transition rounded  top-5 right-5 hover:bg-gray-100 focus-visible:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
+                    >
+                        <span class="sr-only">Close modal</span>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="error-state-modal" style="padding-left: 24px; padding-right: 24px;"></div>
+
+                <form id="contactModal" class="flex flex-col v2-text-us-modal-height sm:screen-height-minus-navbar sm:w-full" onsubmit="send_sms('Fafas-Omega-Brick-Pavers')">
+                    <div
+                      class="flex flex-col flex-shrink-1 h-auto sm:h-full overflow-y-auto overflow-x-hidden pt-6 pb-4"
+                    >
+                        <div class="h-auto px-6 sm:mt-6 space-y-6 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-4">
+                            
+                            
+                                <div>
+                                  <label for="contact-full-name" class="font-medium text-base text-gray-700">Full name <span class="text-red-600"> *</span></label>
+                                    <input
+                                      type="text"
+                                      name="full-name"
+                                      id="contact-full-name"
+                                      class="block w-full border-gray-300 py-2.5 mt-1 rounded-md shadow-sm focus:ring-primary focus:border-primary text-gray-900"
+                                      placeholder="Jane Rodgers"
+                                      required
+                                    />
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                <div>
+                                    <label for="contact-phone-number" class="font-medium text-base text-gray-700">
+                                      Phone number<span class="text-red-600"> *</span>
+                                    </label>
+                                    <input
+                                      type="tel"
+                                      autocomplete="on"
+                                      name="phone-number"
+                                      id="contact-phone-number"
+                                      class="contact-phone-number block w-full border-gray-300 py-2.5 mt-1 rounded-md shadow-sm focus:ring-primary focus:border-primary text-gray-900"
+                                      required
+                                    />
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                <div>
+                                    <label for="contact-address" class="font-medium text-base text-gray-700">
+                                        Address<span class="text-red-600"> *</span>
+                                    </label>
+                                    <input
+                                      type="text"
+                                      name="address"
+                                      id="contact-address"
+                                      class="block w-full border-gray-300 py-2.5 mt-1 rounded-md shadow-sm focus:ring-primary focus:border-primary text-gray-900"
+                                      placeholder="123 Main Street, Boston, MA 02212"
+                                      required
+                                    />
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                <div>
+                                    <label for="contact-email" class="font-medium text-base text-gray-700">Email</label>
+                                    <input
+                                      type="text"
+                                      name="email"
+                                      id="contact-email"
+                                      class="block w-full border-gray-300 py-2.5 mt-1 rounded-md shadow-sm focus:ring-primary focus:border-primary text-gray-900"
+                                      placeholder="name@example.com"
+                                      
+                                    />
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                <div class="relative">
+                                    <label for="contact-date" class="font-medium text-base text-gray-700">Preferred Date of Service</label>
+                                    <div class="w-4 h-4 absolute transform translate-y-4.5 left-4">
+                                    </div>
+                                    <input id="contact-date" name="date" type="date" class="block text-left z-50 w-full border-gray-300 py-2.5 mt-1 rounded-md shadow-sm focus:ring-primary focus:border-primary" >
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                <div class="block sm:grid sm:col-span-2">
+                                    <label class="font-medium text-base text-gray-700">Services</label>
+                                    <fieldset class="sm:bg-white border border-gray-300 rounded-md mt-1 overflow-y-visible h-auto">
+                                        <div class="grid gap-4 space-y-2 grid-cols-2 p-6">
+                                            
+                                            <div class="flex items-center">
+                                                <input
+                                                        id="contact-service-1368743"
+                                                        name="service-1368743"
+                                                        type="checkbox"
+                                                        class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                        value="Paver Installation"
+                                                />
+                                                <label for="contact-service-1368743" class="ml-3 text-sm text-gray-600">Paver Installation</label>
+                                            </div>
+
+                                            
+                                            <div class="flex items-center">
+                                                <input
+                                                        id="contact-service-1368744"
+                                                        name="service-1368744"
+                                                        type="checkbox"
+                                                        class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                        value="Paver Repair"
+                                                />
+                                                <label for="contact-service-1368744" class="ml-3 text-sm text-gray-600">Paver Repair</label>
+                                            </div>
+
+                                            
+                                            <div class="flex items-center">
+                                                <input
+                                                        id="contact-service-1368745"
+                                                        name="service-1368745"
+                                                        type="checkbox"
+                                                        class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                        value="Driveways "
+                                                />
+                                                <label for="contact-service-1368745" class="ml-3 text-sm text-gray-600">Driveways </label>
+                                            </div>
+
+                                            
+                                            <div class="flex items-center">
+                                                <input
+                                                        id="contact-service-1368746"
+                                                        name="service-1368746"
+                                                        type="checkbox"
+                                                        class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                        value="Paver Walkways "
+                                                />
+                                                <label for="contact-service-1368746" class="ml-3 text-sm text-gray-600">Paver Walkways </label>
+                                            </div>
+
+                                            
+                                            <div class="flex items-center">
+                                                <input
+                                                        id="contact-service-1368747"
+                                                        name="service-1368747"
+                                                        type="checkbox"
+                                                        class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                        value="Paver Steps"
+                                                />
+                                                <label for="contact-service-1368747" class="ml-3 text-sm text-gray-600">Paver Steps</label>
+                                            </div>
+
+                                            
+                                            <div class="flex items-center">
+                                                <input
+                                                        id="contact-service-1368748"
+                                                        name="service-1368748"
+                                                        type="checkbox"
+                                                        class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                        value="Pool Remodels"
+                                                />
+                                                <label for="contact-service-1368748" class="ml-3 text-sm text-gray-600">Pool Remodels</label>
+                                            </div>
+
+                                            
+
+                                            <div class="flex flex-col">
+                                                <div class="flex items-center">
+                                                    <input
+                                                            id="contact-service-other-checkbox"
+                                                            name="service-other"
+                                                            type="checkbox"
+                                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                                            value="Other"
+                                                            onclick="toggleOtherServices()"
+                                                        />
+                                                    <label for="contact-service-other-checkbox" class="ml-3 text-sm text-gray-600">Other</label>
+                                                </div>
+                                            <input
+                                                id="contact-service-other-text"
+                                                name="service-other-text"
+                                                type="text"
+                                                class="ml-4 block w-full border-gray-300 py-2.5 mt-1 rounded-md shadow-sm focus:ring-primary focus:border-primary hidden"
+                                            />
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                                <div class="block sm:grid sm:col-span-2">
+                                    <label for="contact-paragraph-b79a641d-7747-4478-9c6a-ad4a1bc7bf09" class="font-medium text-base text-gray-700">How can we help?</label>
+                                    <textarea
+                                      id="contact-paragraph-b79a641d-7747-4478-9c6a-ad4a1bc7bf09"
+                                      name="paragraph-b79a641d-7747-4478-9c6a-ad4a1bc7bf09"
+                                      rows="4"
+                                      class="block py-2.5 px-2.5 mt-1 w-full border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary text-gray-900"
+                                      placeholder="Type your response here..."
+                                      
+                                    ></textarea>
+                                </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col flex-shrink-0 shadow-top">
+                        
+                            <div class="flex text-gray-500 text-sm font-normal mx-6 mt-1.5">
+                                By providing your phone number, you agree to receive text messages (SMS) from Fafa&#x27;s Omega Brick Pavers. You can unsubscribe at anytime by replying STOP. Message and data rates may apply. Message frequency varies.
+                            </div>
+                        
+                        <div class="flex items-center justify-center w-full py-4 px-6 bg-white z-50">
+                            <button   id='sendButton'  class="
+                                        sendButton
+                                        cta_text_conversion
+                                        py-2.5 px-6
+                                        w-full
+                                        text-sm
+                                        font-medium
+                                        transition
+                                        border-2 border-transparent
+                                        rounded-md
+                                        bg-primary
+                                        text-primary-foreground
+                                        focus:outline-none
+                                        hover:bg-primary-darker
+                                        focus-visible:ring-2
+                                        ring-primary ring-opacity-75 ring-offset-2
+                                        disabled:bg-primary-darker"
+
+                                        >Send
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    function handleClose(page) {
+        if (['contact', 'index'].includes(page)) {
+            history.replaceState(null, "", "./");
+        } else {
+            history.replaceState(null, "", page);
+        }
+    }
+    const toggleOtherServices = () => {
+        const otherServices = document.getElementById('contact-service-other-checkbox')
+        const otherServicesInput = document.getElementById('contact-service-other-text')
+        if (otherServices.checked) {
+            otherServicesInput.classList.remove('hidden')
+            otherServicesInput.classList.add('block')
+        } else {
+            otherServicesInput.classList.remove('block')
+            otherServicesInput.classList.add('hidden')
+        }
+    }
+    const toggleOtherServicesMobile = ()=>{
+        const otherServices = document.getElementById('contact-service-Other')
+        const otherServicesInput = document.getElementById('contact-service-other-text2')
+        if (otherServices.checked) {
+            otherServicesInput.classList.remove('hidden')
+            otherServicesInput.classList.add('block')
+        } else {
+            otherServicesInput.classList.remove('block')
+            otherServicesInput.classList.add('hidden')
+        }
+    }
+    var observer1 = new MutationObserver(function() {
+    var dateInput = document.getElementById("contact-date");
+    if (dateInput) {
+      var today = new Date();
+      var twoYearsLater = new Date();
+      twoYearsLater.setFullYear(today.getFullYear() + 2);
+
+      dateInput.setAttribute("min", today.toISOString().split("T")[0]);
+      dateInput.setAttribute("max", twoYearsLater.toISOString().split("T")[0]);
+
+      observer1.disconnect();
+    }
+  });
+  observer1.observe(document, { childList: true, subtree: true });
+</script>
+                            <template x-teleport="body">
+    <div
+            data-heap-component-name="leave_a_review"
+            data-heap-version="v2"
+            x-show="reviewModalOpen" @keydown.escape.prevent.stop="reviewModalOpen = false" role="dialog" aria-modal="true" x-id="['modal-title']" :aria-labelledby="$id('modal-title')" class="fixed inset-0 z-50 pt-8 pb-20" x-trap.noscroll.inert="reviewModalOpen">
+        <div x-show="reviewModalOpen" x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" aria-hidden="true" class="fixed inset-0 bg-black bg-opacity-50"></div>
+        <div
+            x-show="reviewModalOpen"
+            x-transition:enter="ease-out duration-300"
+            x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+            x-transition:leave="ease-in duration-200"
+            x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+            x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            @click="reviewModalOpen = false"
+            class="relative flex items-center justify-center w-full h-full"
+        >
+            <div @click.stop class="flex flex-col w-full max-h-full pb-6 mx-6 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl px-6 sm:my-8 sm:align-middle sm:max-w-sm">
+                <div class="relative px-6 bg-white">
+                    <h2 class="mt-16 mb-2 text-lg font-medium text-center" :id="$id('modal-title')">Leave a review</h2>
+                    <button @click="reviewModalOpen = false;" class="absolute p-1 transition rounded top-5 right-5 hover:bg-gray-100 focus-visible:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2">
+                        <span class="sr-only">Close modal</span>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <ul class="mt-2 space-y-6">
+                    <span hidden class="sr-only">Review types</span>
+                    
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="https://search.google.com/local/writereview?placeid=ChIJqZT3MfunjA0RyktCVmE1kHU" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">
+                            
+                                Google
+                            
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="hidden md:block">
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/FafasPavers/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">
+                            
+                                Facebook
+                            
+                        </a>
+                    </li>
+                   <li class="block md:hidden">
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/FafasPavers" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">
+                            
+                                Facebook
+                            
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+                        
                     
                 
                 
