@@ -1115,7 +1115,7 @@
                             
                                 <div class="aspect-w-3 aspect-h-2">
                                     
-                                        <img class="object-cover lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/284fa130-04c1-49f0-8920-a7d81238aecd.jpeg"  alt="Exterior Renovations for Fafa&#x27;s Omega Brick Pavers in Lakeland, FL" loading="lazy" decoding="async"/>
+                                        <img class="object-cover lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/173c060a-c81c-4d7d-a5e3-d31853b7aefb.jpeg"  alt="Exterior Renovations for Fafa&#x27;s Omega Brick Pavers in Lakeland, FL" loading="lazy" decoding="async"/>
                                     
                                 </div>
 
@@ -1139,7 +1139,7 @@
                             
                                 <div class="aspect-w-3 aspect-h-2">
                                     
-                                        <img class="object-cover lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/173c060a-c81c-4d7d-a5e3-d31853b7aefb.jpeg"  alt="Exterior Renovations for Fafa&#x27;s Omega Brick Pavers in Lakeland, FL" loading="lazy" decoding="async"/>
+                                        <img class="object-cover lazy"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/284fa130-04c1-49f0-8920-a7d81238aecd.jpeg"  alt="Exterior Renovations for Fafa&#x27;s Omega Brick Pavers in Lakeland, FL" loading="lazy" decoding="async"/>
                                     
                                 </div>
 
@@ -1199,7 +1199,7 @@
                                 <li class="flex flex-col" x-show="activeImage === 0">
                                     
                                         
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/284fa130-04c1-49f0-8920-a7d81238aecd.jpeg" alt="Exterior Renovations for Fafa&#x27;s Omega Brick Pavers in Lakeland, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/173c060a-c81c-4d7d-a5e3-d31853b7aefb.jpeg" alt="Exterior Renovations for Fafa&#x27;s Omega Brick Pavers in Lakeland, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     
@@ -1208,7 +1208,7 @@
                                 <li class="flex flex-col" x-show="activeImage === 1">
                                     
                                         
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/173c060a-c81c-4d7d-a5e3-d31853b7aefb.jpeg" alt="Exterior Renovations for Fafa&#x27;s Omega Brick Pavers in Lakeland, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/1000x1000/filters:strip_exif()/filters:no_upscale()/media/284fa130-04c1-49f0-8920-a7d81238aecd.jpeg" alt="Exterior Renovations for Fafa&#x27;s Omega Brick Pavers in Lakeland, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     
@@ -1499,7 +1499,7 @@ function filterGalleryByDataId(filter) {
                 </div>
                 <div id="error-state-modal" style="padding-left: 24px; padding-right: 24px;"></div>
 
-                <form id="contactModal" class="flex flex-col flex-grow overflow-hidden sm:w-full" onsubmit="send_sms('Fafas-Omega-Brick-Pavers', 'contact-modal', '+18138596062')">
+                <form id="contactModal" class="flex flex-col flex-grow overflow-hidden sm:w-full" onsubmit="send_sms('Fafas-Omega-Brick-Pavers', 'contact-modal', deobfuscateNumber('+18138596062'))">
                     <div
                       class="flex flex-col flex-shrink-1 h-auto sm:h-full overflow-y-auto overflow-x-hidden pt-6 pb-4"
                     >
@@ -2337,7 +2337,7 @@ function filterGalleryByDataId(filter) {
     
 
     
-
+    
     <script>
         window.addEventListener("load", function() {
             setTimeout(function() {
@@ -2347,6 +2347,49 @@ function filterGalleryByDataId(filter) {
             }, 5000);
         });
     </script>
+    
+    <script>
+  /**
+   * Phone number obfuscation to prevent bot scraping
+   * Decodes phone numbers from data attributes and initiates calls
+   */
+  function deobfuscateNumber(number) {
+    const isObfuscated = "False" === "True";
+    if (!isObfuscated) {
+      return number;
+    }
+    const binaryPD = atob(number);
+    const bytesPD = Uint8Array.from(binaryPD, (c) => c.charCodeAt(0));
+    const decodedPD = new TextDecoder("utf-8").decode(bytesPD);
+    const phone = decodedPD.slice(20);
+
+    return phone;
+  }
+
+  function initiateCall(element) {
+    const pref = "tel:";
+
+    try {
+      const pd = element.getAttribute("data-phone");
+      if (!pd) {
+        console.error("No phone number found on element to call");
+        return;
+      }
+      const phone = deobfuscateNumber(pd);
+
+      window.location.href = pref + phone;
+    } catch (error) {
+      console.error("Error:", error);
+
+      // Try calling the phone number
+      const fallbackPhone = element.getAttribute("data-phone");
+      if (fallbackPhone) {
+        window.location.href = pref + fallbackPhone.replace(/[^0-9]/g, "");
+      }
+    }
+  }
+</script>
+
 </body>
 
 </html>

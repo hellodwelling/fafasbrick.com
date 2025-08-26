@@ -2123,7 +2123,7 @@ Ultimately, this project showcases the remarkable benefits of choosing Fafa&#x27
   function getFastQuoteDiv() {
   const fastQuoteDiv = `
     <div id="error-state-modal-embedded" style="padding-left: 24px; padding-right: 24px;"></div>
-    <form id="embeddedForm" onsubmit="send_sms('Fafas-Omega-Brick-Pavers', 'contact-embedded', '+18138596062')" style="height: 316px;" class="fast-quote-div top-0 sticky flex flex-col flex-shrink-0 bg-primary rounded-lg p-4">
+    <form id="embeddedForm" onsubmit="send_sms('Fafas-Omega-Brick-Pavers', 'contact-embedded', deobfuscateNumber('+18138596062'))" style="height: 316px;" class="fast-quote-div top-0 sticky flex flex-col flex-shrink-0 bg-primary rounded-lg p-4">
       <div class="flex justify-center text-primary-foreground text-2xl font-extrabold">Get a Fast Quote</div>
       <div class="flex flex-col space-y-5 w-full pt-4">
         <input
@@ -2498,7 +2498,7 @@ Ultimately, this project showcases the remarkable benefits of choosing Fafa&#x27
                 </div>
                 <div id="error-state-modal" style="padding-left: 24px; padding-right: 24px;"></div>
 
-                <form id="contactModal" class="flex flex-col flex-grow overflow-hidden sm:w-full" onsubmit="send_sms('Fafas-Omega-Brick-Pavers', 'contact-modal', '+18138596062')">
+                <form id="contactModal" class="flex flex-col flex-grow overflow-hidden sm:w-full" onsubmit="send_sms('Fafas-Omega-Brick-Pavers', 'contact-modal', deobfuscateNumber('+18138596062'))">
                     <div
                       class="flex flex-col flex-shrink-1 h-auto sm:h-full overflow-y-auto overflow-x-hidden pt-6 pb-4"
                     >
@@ -3262,7 +3262,7 @@ Ultimately, this project showcases the remarkable benefits of choosing Fafa&#x27
     
 
     
-
+    
     <script>
         window.addEventListener("load", function() {
             setTimeout(function() {
@@ -3272,6 +3272,49 @@ Ultimately, this project showcases the remarkable benefits of choosing Fafa&#x27
             }, 5000);
         });
     </script>
+    
+    <script>
+  /**
+   * Phone number obfuscation to prevent bot scraping
+   * Decodes phone numbers from data attributes and initiates calls
+   */
+  function deobfuscateNumber(number) {
+    const isObfuscated = "False" === "True";
+    if (!isObfuscated) {
+      return number;
+    }
+    const binaryPD = atob(number);
+    const bytesPD = Uint8Array.from(binaryPD, (c) => c.charCodeAt(0));
+    const decodedPD = new TextDecoder("utf-8").decode(bytesPD);
+    const phone = decodedPD.slice(20);
+
+    return phone;
+  }
+
+  function initiateCall(element) {
+    const pref = "tel:";
+
+    try {
+      const pd = element.getAttribute("data-phone");
+      if (!pd) {
+        console.error("No phone number found on element to call");
+        return;
+      }
+      const phone = deobfuscateNumber(pd);
+
+      window.location.href = pref + phone;
+    } catch (error) {
+      console.error("Error:", error);
+
+      // Try calling the phone number
+      const fallbackPhone = element.getAttribute("data-phone");
+      if (fallbackPhone) {
+        window.location.href = pref + fallbackPhone.replace(/[^0-9]/g, "");
+      }
+    }
+  }
+</script>
+
 </body>
 
 </html>
