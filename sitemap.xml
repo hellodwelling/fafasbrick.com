@@ -32,7 +32,7 @@
     </url>
 
     <url>
-        <loc>https://fafasbrick.com/blog/reimagining-urban-spaces-creative-paver/</loc>
+        <loc>https://fafasbrick.com/galleries/Exterior-Renovations/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -46,7 +46,7 @@
     </url>
 
     <url>
-        <loc>https://fafasbrick.com/galleries/Exterior-Renovations/</loc>
+        <loc>https://fafasbrick.com/blog/reimagining-urban-spaces-creative-paver/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -60,14 +60,14 @@
     </url>
 
     <url>
-        <loc>https://fafasbrick.com/services/paver-installation/</loc>
+        <loc>https://fafasbrick.com/blog/seasonal-outdoor-transformations-paver-designs/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://fafasbrick.com/blog/seasonal-outdoor-transformations-paver-designs/</loc>
+        <loc>https://fafasbrick.com/services/paver-installation/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -81,13 +81,6 @@
     </url>
 
     <url>
-        <loc>https://fafasbrick.com/showcases/</loc>
-        <lastmod>2026-07-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
         <loc>https://fafasbrick.com/services/paver-repair/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
@@ -95,14 +88,7 @@
     </url>
 
     <url>
-        <loc>https://fafasbrick.com/blog/the-ultimate-makeover-for-your/</loc>
-        <lastmod>2026-07-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://fafasbrick.com/reviews/</loc>
+        <loc>https://fafasbrick.com/showcases/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -116,7 +102,14 @@
     </url>
 
     <url>
-        <loc>https://fafasbrick.com/services/paver-walkways/</loc>
+        <loc>https://fafasbrick.com/reviews/</loc>
+        <lastmod>2026-07-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/blog/the-ultimate-makeover-for-your/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -137,7 +130,21 @@
     </url>
 
     <url>
+        <loc>https://fafasbrick.com/services/paver-walkways/</loc>
+        <lastmod>2026-07-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
         <loc>https://fafasbrick.com/blog/revitalize-your-outdoor-ambiance-exclusive/</loc>
+        <lastmod>2026-07-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://fafasbrick.com/services/paver-driveways/</loc>
         <lastmod>2026-07-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
